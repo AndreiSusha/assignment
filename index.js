@@ -13,7 +13,7 @@ app.engine(
 app.set('view engine', 'handlebars');
 
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('index', { title: 'Home', companyName: 'Pizza World' });
 });
 
 app.get('/contact', (req, res) => {
