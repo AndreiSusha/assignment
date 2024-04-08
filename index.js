@@ -5,8 +5,12 @@ const app = express();
 
 const pizzas = [
   {
-    name: 'Napoli',
-    price: 15,
+    id: 0,
+    imageUrl:
+      'https://plus.unsplash.com/premium_photo-1667682942060-977925f9a54b?q=80&w=3972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    name: 'Pepperoni with pepper',
+    price: 8,
+    description: 'A classic pepperoni pizza with an extra kick of pepper.',
   },
   {
     name: 'Milano',
