@@ -1,1 +1,27 @@
-<h1>Welcome to our homepage <br>{{companyName}}</h1>
+<div class="page">
+  <header>
+    <h1>Welcome to our homepage</h1>
+    <h2><b>{{companyName}}</b></h2>
+  </header>
+  <main>
+    <h2>Pizzas</h2>
+    {{! loop products }}
+    <div class="pizzas">
+      {{#each pizzas}}
+        <div class="pizza-card">
+          <img src={{this.imageUrl}} class="image" alt="pizza" />
+          <h3>
+            <b>{{this.name}}</b>{{this.price}}
+            <br />
+          </h3>
+          <p>{{this.description}}</p>
+        </div>
+      {{/each}}
+    </div>
+  </main>
+  <footer>
+    <h3>Contact</h3>
+    <p>Email:
+      <a href="mailto:Pizza-World@gmail.com">Pizza-World@gmail.com</a></p>
+  </footer>
+</div>
